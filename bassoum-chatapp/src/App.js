@@ -1,7 +1,14 @@
 import { ChatEngine } from 'react-chat-engine';
 import "./App.css";
+import LoginForm from './components/LoginForm';
 import ChatFeed from "./components/ChatFeed";
+
 const App = ()=>{
+  //if there is no username i need to render only the login
+  if(!localStorage.getItem('username')) return <LoginForm/>
+
+
+//when i enter the username then i can see the chat message app (my messages)
     return (
         <ChatEngine
             height="100vh"
