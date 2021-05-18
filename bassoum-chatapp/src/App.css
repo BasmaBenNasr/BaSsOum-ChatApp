@@ -1,43 +1,45 @@
 /* CHAT STYLES */
 * {
-    font-family: Avenir, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-      Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
-      Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    letter-spacing: 0.5px;
-  }
-  
-  .ce-chat-list {
-    background-color: rgb(240, 240, 240) !important;
-  }
-  
-  .ce-chats-container {
-    background-color: rgb(240, 240, 240) !important;
-  }
-  
-  .ce-active-chat-card {
-    background-color: #cabcdc !important;
-    border: 4px solid #cabcdc !important;
-    border-radius: 0px !important;
-  }
-  
-  .ce-chat-subtitle-text {
-    color: #595959 !important;
-  }
-  
-  .ce-chat-form-container {
-    padding-bottom: 20px !important;
-  }
-  
-  .ce-text-input {
-    border-radius: 6px !important;
-    border: 1px solid #3b2a50 !important;
-  }
-  
-  .ce-primary-button {
-    border-radius: 6px !important;
-    background-color: #7554a0 !important;
-    position: relative;
-    bottom: 1px;
+  font-family: Avenir, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  letter-spacing: 0.5px;
+}
+
+.ce-chat-list {
+  /*background-color: white !important;*/
+  background-image: url('https://www.tfo.com.au/wp-content/uploads/light-grey-matt-finish-stone-look-porcelain-tile-1.jpg');
+  background-size: cover;}
+
+.ce-chats-container {
+ /* background-color: white!important;*/
+ background-image: url('https://www.tfo.com.au/wp-content/uploads/light-grey-matt-finish-stone-look-porcelain-tile-1.jpg');
+ background-size: cover;}
+
+.ce-active-chat-card {
+  background-color: rgba(70, 66, 66, 0.26) !important;
+  border: 4px  #c38cd473 !important;
+  border-radius: 0px !important;
+}
+
+.ce-chat-subtitle-text {
+  color: #474343d3 !important;
+}
+
+.ce-chat-form-container {
+  padding-bottom: 20px !important;
+}
+
+.ce-text-input {
+  border-radius: 6px !important;
+  border: 1px solid #3b2a50 !important;
+}
+
+.ce-primary-button {
+  border-radius: 6px !important;
+  background-color: #a054a0 !important;
+  position: relative;
+  bottom: 1px;
 }
 
 .ce-danger-button {
@@ -46,7 +48,8 @@
 }
 
 .ce-settings {
-  background-color: rgb(240, 240, 240) !important;
+  background-image: url('https://www.tfo.com.au/wp-content/uploads/light-grey-matt-finish-stone-look-porcelain-tile-1.jpg');
+background-size: cover;
 }
 
 .ce-autocomplete-input {
@@ -56,7 +59,7 @@
 
 .ce-autocomplete-options {
   border-radius: 6px !important;
-  border: 1px solid #3b2a50 !important;
+  border: 1px solid #070331 !important;
   background-color: white !important;
 }
 
@@ -74,25 +77,29 @@
   height: 100%;
   width: 100%;
   overflow: scroll;
-  background-color: rgb(240, 240, 240);
+ /* background-color: rgb(240, 240, 240);*/
+  background-image: url('https://i.pinimg.com/474x/95/f9/94/95f99440ef7aec940d46aa8cb24db11c.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 .chat-title-container {
   width: calc(100% - 36px);
-  padding: 18px;
+  padding: 25px;
   text-align: center;
 }
 
 .chat-title {
-  color: #7554a0;
+  color: #8a0b0b;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 27px;
 }
 
 .chat-subtitle {
-  color: #7554a0;
+  color: #a05454;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
   padding-top: 4px;
 }
 
@@ -109,14 +116,14 @@
 }
 
 .message-avatar {
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   border-radius: 22px;
   color: white;
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 48px;
+  background-size: 50px;
 }
 
 .message {
@@ -131,7 +138,6 @@
   object-fit: cover;
   border-radius: 6px;
   height: 30vw;
-  /* width: 30vw; */
   max-height: 200px;
   max-width: 200px;
   min-height: 100px;
@@ -144,13 +150,13 @@
 }
 
 .read-receipt {
-  width: 13px;
-  height: 13px;
-  border-radius: 13px;
+  width: 18px;
+  height: 18px;
+  border-radius: 18px;
   margin: 1.5px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 14px;
+  background-size: 18px;
 }
 
 .message-form-container {
@@ -158,21 +164,21 @@
   bottom: 0px;
   width: calc(100% - 36px);
   padding: 18px;
-  background-color: rgb(240, 240, 240);
+  background-color: rgba(126, 80, 80, 0.301);
 }
 
 .message-form {
   overflow: hidden;
   border-radius: 6px;
-  border: 1px solid #3b2a50;
-  background-color: white;
+  border: 1px  rgba(126, 80, 80, 0.301);
+  background-color: rgba(126, 80, 80, 0.301);
 }
 
 .message-input {
   height: 40px;
   width: calc(100% - 132px);
   background-color: white;
-  border: 1px solid white;
+  border: none;
   padding: 0px 18px;
   outline: none;
   font-size: 15px;
@@ -196,12 +202,13 @@
   top: 1px;
   position: relative;
   transform: rotate(-90deg);
+  font-size: 17px;
 }
 
 .picture-icon {
   top: 1px;
   position: relative;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 /* FORM STYLES */
@@ -217,24 +224,25 @@
 .wrapper {
   height: 100vh;
 	width: 100%;
-  background: rgb(117,84,160);
+  background: rgb(35, 27, 46);
   background: linear-gradient(90deg, rgba(117,84,160,1) 7%, rgba(117,84,160,1) 17%, rgba(106,95,168,1) 29%, rgba(99,103,174,1) 44%, rgba(87,116,184,1) 66%, rgba(70,135,198,1) 83%, rgba(44,163,219,1) 96%, rgba(22,188,237,1) 100%, rgba(0,212,255,1) 100%);  
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url('https://www.xmple.com/wallpaper/gradient-purple-linear-red-1920x1080-c2-4b0082-fa8072-a-0-f-14.svg');
+  background-size: cover;
+
 }
 
 .input {
-  color: #333;
+  color: rgb(2, 0, 0);
   font-size: 1.2rem;
 	margin: 0 auto;
   padding: 1.5rem 2rem;
-  border-radius: 0.2rem;
-  background-color: rgb(255, 255, 255);
   border: none;
   width: 90%;
   display: block;
-  border-bottom: 0.3rem solid transparent;
+ border-radius: 25px;
   transition: all 0.3s;
   outline: none;
   margin-bottom: 25px;
@@ -246,25 +254,18 @@
 
 .title {
   text-align: center;
-  color: white;
+  color: rgba(211, 207, 207, 0.801);
   margin-bottom: 30px;
   width: 100%;
-  font-size: 2.5em;
-}
-
-.title2{
-  text-align: center;
-  color: white;
-  margin-bottom: 60px;
-  width: 100%;
-  font-size: 1.5em;
+  font-size: 2.3em;
+  letter-spacing: 10px;
 }
 
 .button {
-  border-radius: 4px;
+  border-radius: 25px;
   border: none;
-  background-color: white;
-  color: black;
+  background-color: rgb(151, 19, 151);
+  color: white;
   text-align: center;
   text-transform: uppercase;
   font-size: 22px;
@@ -274,6 +275,7 @@
   cursor: pointer;
   margin: 5px;
   width: 90%;
+  font-weight: bold;
 }
 .button span {
   cursor: pointer;
@@ -297,9 +299,18 @@
   right: 0;
 }
 
-
-.error{
-  color: white;
-  margin-left: 32px;
-  font-size: 20px;
+.title2{
+  text-align: center;
+  color: rgba(211, 207, 207, 0.801);
+  margin-bottom: 60px;
+  width: 100%;
+  font-size: 1.5em;
+  letter-spacing: 10px;
 }
+.error{
+  color: rgba(211, 207, 207, 0.801);
+  margin-left: 50px;
+  font-size: 20px;
+  
+}
+

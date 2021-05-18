@@ -1,21 +1,25 @@
 import { ChatEngine } from 'react-chat-engine';
-import "./App.css";
-import LoginForm from './components/LoginForm';
 import ChatFeed from "./components/ChatFeed";
+import LoginForm from './components/LoginForm';
+import "./App.css";
+
+
+const projectID = "fd0fee16-26b6-4bed-b3b8-908d42cbade8";
 
 const App = ()=>{
   //if there is no username i need to render only the login
-  if(!localStorage.getItem('username')) return <LoginForm/>
+  if(!localStorage.getItem('username')) return <LoginForm />
 
 
 //when i enter the username then i can see the chat message app (my messages)
     return (
         <ChatEngine
             height="100vh"
-            projectID="21de8b2e-c9e1-4601-a0b6-942a0367252f"
-            userName="Basma"
-            userSecret="123123"
-            renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps }/>}
+            projectID = {projectID}
+            userName={localStorage.getItem('username')}
+            userSecret={localStorage.getItem('password')}
+            renderChatFeed={(chatAppProps) => <ChatFeed { ...chatAppProps} />}
+            onNewMessage={() => new Audio('https://chat-engine-assets.s3.amazonaws.com/click.mp3').play()}
         />
     );
 }

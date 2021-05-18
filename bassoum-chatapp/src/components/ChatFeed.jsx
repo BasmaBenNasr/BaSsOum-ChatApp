@@ -26,7 +26,7 @@ const ChatFeed = (props) => {
             
             
             />
-        ))
+        ));
     
 
    // console.log(chat, userName, messages)
@@ -72,7 +72,7 @@ const ChatFeed = (props) => {
 
 
 
-    if(!chat) return 'It is Loading ...';
+    if(!chat) return "It's Loading..."
 
     return(
         /*Note that i puted the question mark before the title chat?.title so i can have the chat
@@ -87,7 +87,7 @@ const ChatFeed = (props) => {
             {renderMessages()}
             <div style={{ height: '100px'}}></div>
             <div className="message-form-container">
-                <MessagesDesignFrom {...props} chatId={activeChat}/>
+                <MessagesDesignFrom {...props} chatId={activeChat} />
             </div>
         </div>
     )
